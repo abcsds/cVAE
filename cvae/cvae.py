@@ -95,8 +95,8 @@ if __name__ == "__main__":
     parser.add_argument('--seed', type=int, default=1, help='random seed (default: 1)')
     parser.add_argument('--log', type=int, default=1, metavar='N',
                         help='how many batches to wait before logging training status')
-    parser.add_argument('--dir', help='dataset directory', default='/Users/chenyifan/jianguo/dataset')
-    parser.add_argument('--data', help='specify dataset', default='test')
+    parser.add_argument('--dir', help='dataset directory', default='./data')
+    parser.add_argument('--data', help='specify dataset', default='music')
     parser.add_argument('--layer', nargs='+', help='number of neurals in each layer', type=int, default=[20])
     parser.add_argument('-N', help='number of recommended items', type=int, default=10)
     parser.add_argument('--lr', help='learning rate', type=float, default=1e-3)
